@@ -6,7 +6,7 @@ import { SiTailwindcss, SiNodedotjs, SiFramer } from "react-icons/si";
 const LeftBanner = () => {
   const [text] = useTypewriter({
     words: [
-      "Professional Coder.",
+      "Front End Developer.",
       "Full Stack Developer.",
       "Back End Developer.",
     ],
@@ -22,12 +22,12 @@ const LeftBanner = () => {
         <h1 className="text-6xl font-bold text-white">
           Hi, I'm <span className="text-designColor capitalize">Kavinder</span>
         </h1>
-        <h2 className="text-4xl font-bold text-white">
+        <h2 className="text-4xl font-bold text-white z-1">
           a <span>{text}</span>
           <Cursor
             cursorBlinking="false"
             cursorStyle="|"
-            cursorColor="#ff014f"
+            cursorColor="#00BCD4"
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">

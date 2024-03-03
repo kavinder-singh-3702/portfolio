@@ -10,18 +10,21 @@ import Navbar from "./components/navbar/Navbar";
 import Projects from "./components/projects/Projects";
 import Resume from "./components/resume/Resume";
 import Testimonial from "./components/tesimonial/Testimonial";
+import { BackgroundBeams } from "./components/utils/background/background";
 
 function App() {
   return (
     <div className="w-full h-auto bg-bodyColor text-lightText px-4">
-      {/* <Snowfetti /> */}
-      <Navbar />
       <div className="max-w-screen-xl mx-auto">
+        {/* <Snowfetti /> */}
+        <BackgroundBeams className={"bg-repeat-y"} />
+        <Navbar />
         <Banner />
+        {/* <CardContainer /> */}
         <Features />
         <Projects />
         <Resume />
-        <Testimonial />
+        {/* <Testimonial /> */}
         <Contact />
         <Footer />
         <FooterBottom />
