@@ -1,12 +1,11 @@
 import React from "react";
 import LeftBanner from "./LeftBanner";
-import { bannerImg } from "../../assets/index";
 import { LampDemo } from "../utils/lamp/lamp";
 const Banner = () => {
   return (
     <section
       id="home"
-      className="z-0 w-full pt-10 pb-20 flex flex-col gap-10 xl:gap-0 lgl:flex-row items-center border-b-[1px] font-titleFont border-b-black"
+      className="z-2 flex-1 w-full pt-10  flex flex-col gap-20 xl:gap-0 lg:flex-row items-start border-b-[1px] justify-center font-titleFont border-b-black"
     >
       <LeftBanner />
       <div className="hidden lg:flex">

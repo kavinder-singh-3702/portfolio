@@ -13,6 +13,8 @@ module.exports = {
   theme: {
     extend: {
       animation: {
+        "spin-slow": "spin 6s linear infinite",
+        "bounce-slow": "bounce 5s linear infinite",
         "meteor-effect": "meteor 5s linear infinite",
       },
       keyframes: {

@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="w-full py-20 border-b-[1px] border-b-black"
+      className="w-full py-20 sticky font-titleFont border-b-[1px]bg-gradient-to-r from-[rgba(2,1,23,1)] via-[rgba(12,12,42,1)]"
     >
       <div className="flex justify-center items-center text-center">
         <Title title="CHECK THIS PROJECTS" des="My Projects" />

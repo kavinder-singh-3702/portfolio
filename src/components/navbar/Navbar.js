@@ -9,7 +9,7 @@ import { navLinksdata } from "../../constants";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
-    <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
+    <div className="w-full h-24 sticky z-20 top-0 mx-auto flex justify-between items-center font-titleFont border-b-[1px] bg-gradient-to-r from-[rgba(2,1,23,1)] via-[rgba(12,12,42,1)]">
       <div>
         <img src={logo} alt="logo" className="h-[70px] w-[80px] rounded-full" />
       </div>
