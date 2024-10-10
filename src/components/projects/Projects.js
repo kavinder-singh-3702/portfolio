@@ -14,42 +14,39 @@ const Projects = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
         <ProjectsCard
-          title="SOCIAL MEDIA CLONE"
-          des=" Facebook Clone using MERN Stack This project is a Facebook clone created using the MERN stack, encompassing MongoDB, Express.js, React, and Node.js. The application replicates several key features and functionalities of the popular social media platform Facebook, providing users with a familiar interface and experience."
+          title="College Society Website"
+          des="Built a College Society website using React and Tailwind with parallax scrolling and lazy loading techniques. The site saw a 35% increase in page views due to reduced load times and improved real-time data display using AXIOS."
+          src={projectThree}
+          hosted="https://hackathon.hackoverflowsociety.in/"
+          github="https://github.com/Hackoverflow-Society/hackoverflow"
+        />
+
+        <ProjectsCard
+          title="Cars24 Career Portal"
+          des="Enhanced a career portal by implementing server-side rendering for SEO optimization, improving search engine rankings. Worked on backend API integrations to ensure smooth performance and user experience."
+          src={projectThree}
+        />
+        <ProjectsCard
+          title="AutomatEazy Dashboards"
+          des="Developed and maintained dashboards for AutomatEazy, with features like bulk communication, pagination, and filters to improve data management. Ensured seamless integration for Admin, Counselor, Tenant, and Student roles."
+          src={projectOne}
+          hosted="https://dev-cc.automateazy.com/login"
+        />
+
+        <ProjectsCard
+          title="SOCIAL MEDIA PLATFORM"
+          github="https://github.com/kavinder-singh-3702/facebook-clone-"
+          des="Developed a social media platform using the MERN stack with features like robust user authentication, real-time messaging with Socket.io, and customizable user profiles. The platform enhances user engagement through instant notifications and profile personalization."
           src={projectOne}
         />
         <ProjectsCard
-          title="Gaming Website"
-          des=" Led the creation of a cutting-edge gaming website tailored for online gaming events nationwide. Designed to serve as a centralized platform, the website seamlessly connects gamers across PAN India, offering a dynamic space for competitions, community interaction, and skill showcasing. Through strategic planning and implementation."
+          title="Gaming Event Website"
+          des="Led the creation of a gaming event website to connect gamers across India. The platform supports dynamic event hosting, community interaction, and showcases user skills. Utilized technologies like React, Tailwind, and Framer Motion to improve user interaction."
           src={projectTwo}
           github={
             "https://github.com/Hackoverflow-Society/gaming-event-website"
           }
           hosted={"https://gaming-event-website.vercel.app/"}
-        />
-        <ProjectsCard
-          title="Chatting App"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={projectThree}
-        />
-        <ProjectsCard
-          title="SOCIAL MEDIA CLONE"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={projectThree}
-        />
-        <ProjectsCard
-          title="E-commerce Website"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={projectOne}
-        />
-        <ProjectsCard
-          title="Chatting App"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={projectTwo}
         />
       </div>
     </section>

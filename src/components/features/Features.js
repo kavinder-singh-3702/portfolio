@@ -15,26 +15,22 @@ const Features = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-6 xl:gap-20 z-10">
         <Card
           title="UI Development"
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-          hic consequuntur eum repellendus ad."
+          des="Specialized in crafting intuitive and responsive user interfaces using modern frameworks like React and Angular. Experienced in transforming designs into interactive experiences."
           icon={<AiFillAppstore />}
         />
         <Card
-          title="SEO Optimisation"
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-          hic consequuntur eum repellendus ad."
+          title="SEO Optimization"
+          des="Proficient in optimizing websites for search engines, improving organic reach through on-page SEO strategies, keyword analysis, and performance tuning."
           icon={<SiProgress />}
         />
         <Card
           title="Website Development"
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-          hic consequuntur eum repellendus ad."
+          des="Skilled in building dynamic and scalable web applications, utilizing technologies like JavaScript, HTML5, CSS3, and back-end integration."
           icon={<FaMobile />}
         />
         <Card
           title="UX Design"
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-          hic consequuntur eum repellendus ad."
+          des="Expertise in designing user-centered interfaces that enhance user experience, conducting research, and creating wireframes to ensure seamless user journeys."
           icon={<SiAntdesign />}
         />
       </div>

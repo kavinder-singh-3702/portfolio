@@ -1,7 +1,20 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiNodedotjs, SiFramer } from "react-icons/si";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaReact,
+  FaGithub,
+  FaInstagram,
+} from "react-icons/fa";
+import {
+  SiTailwindcss,
+  SiNodedotjs,
+  SiFramer,
+  SiNextdotjs,
+  SiAngularjs,
+} from "react-icons/si";
 
 const LeftBanner = () => {
   const [text] = useTypewriter({
@@ -31,26 +44,38 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-          I use animation as a third dimension by which to simplify experiences
-          and kuiding thro each and every interaction. I'm not adding motion
-          just to spruce things up, but doing it in ways that.
+          I am a MERN stack developer with experience optimizing web platforms
+          and improving user experience. I have developed backend APIs for
+          CollegeChalo.com and created dashboards for AutomatEazy, enhancing
+          data management with features like bulk communication and pagination.
+          My focus is on delivering seamless functionality and efficient user
+          interfaces.
         </p>
       </div>
-      <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
+      <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between z-50">
         <div>
           <h2 className="text-base uppercase font-titleFont mb-4">
             Find me in
           </h2>
           <div className="flex gap-4">
-            <span className="bannerIcon">
-              <FaFacebookF />
-            </span>
-            <span className="bannerIcon">
-              <FaTwitter />
-            </span>
-            <span className="bannerIcon">
+            <a
+              className="bannerIcon"
+              href="https://github.com/kavinder-singh-3702/"
+            >
+              <FaGithub />
+            </a>
+            <a
+              className="bannerIcon"
+              href="https://www.instagram.com/_kamal_not_camel_/"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              className="bannerIcon"
+              href="https://www.linkedin.com/in/kavinder-singh-91ba4a1b2/"
+            >
               <FaLinkedinIn />
-            </span>
+            </a>
           </div>
         </div>
         <div>
@@ -63,13 +88,13 @@ const LeftBanner = () => {
             </span>
 
             <span className="bannerIcon">
-              <SiTailwindcss />
+              <SiNextdotjs />
             </span>
             <span className="bannerIcon">
               <SiNodedotjs />
             </span>
             <span className="bannerIcon">
-              <SiFramer />
+              <SiAngularjs />
             </span>
           </div>
         </div>
