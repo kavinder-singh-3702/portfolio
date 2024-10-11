@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Title from "../layouts/Title";
 import ContactLeft from "./ContactLeft";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [username, setUsername] = useState("");
@@ -21,28 +22,48 @@ const Contact = () => {
 
   const handleSend = (e) => {
     e.preventDefault();
+
     if (username === "") {
       setErrMsg("Username is required!");
     } else if (phoneNumber === "") {
       setErrMsg("Phone number is required!");
     } else if (email === "") {
       setErrMsg("Please give your Email!");
-    } else if (!emailValidation(email)) {
-      setErrMsg("Give a valid Email!");
     } else if (subject === "") {
-      setErrMsg("Plese give your Subject!");
+      setErrMsg("Please give your Subject!");
     } else if (message === "") {
       setErrMsg("Message is required!");
     } else {
-      setSuccessMsg(
-        `Thank you dear ${username}, Your Messages has been sent Successfully!`
-      );
-      setErrMsg("");
-      setUsername("");
-      setPhoneNumber("");
-      setEmail("");
-      setSubject("");
-      setMessage("");
+      // Send email via EmailJS
+      emailjs
+        .send(
+          "service_we8x5bj", // Your EmailJS service ID
+          "template_n15o1sl", // Your EmailJS template ID
+          {
+            username: username,
+            phoneNumber: phoneNumber,
+            email: email,
+            subject: subject,
+            message: message,
+          },
+          "Gj4iPZTxJU7_jTC4o" // Replace with your EmailJS user ID (available in EmailJS dashboard)
+        )
+        .then(
+          (result) => {
+            setSuccessMsg(
+              `Thank you dear ${username}, Your Messages have been sent successfully!`
+            );
+            setErrMsg("");
+            setUsername("");
+            setPhoneNumber("");
+            setEmail("");
+            setSubject("");
+            setMessage("");
+          },
+          (error) => {
+            setErrMsg("Failed to send message. Please try again later.");
+          }
+        );
     }
   };
   return (

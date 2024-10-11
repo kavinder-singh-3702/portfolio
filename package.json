@@ -1,5 +1,5 @@
 {
-  "name": "portfolioyoutube",
+  "name": "personal-portfolio",
   "version": "0.1.0",
   "private": true,
   "rules": {
@@ -16,6 +16,7 @@
     "@types/react": "^18.2.56",
     "@types/react-dom": "^18.2.19",
     "clsx": "^2.1.0",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^8.5.5",
     "maath": "^0.10.7",
     "react": "^18.2.0",
